@@ -1,0 +1,5501 @@
+@import url('https://www.google.com/search?q=google&oq=G&aqs=chrome.0.35i39i355j46i39i199i465j69i57j69i59j69i60l2j69i61j69i60.1218j0j7&sourceid=chrome&ie=UTF-8');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+
+body{
+    height: 700vh;
+}
+
+.vid1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#image{
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+}
+
+
+
+#header b{
+    font-size: 30px;
+}
+table {
+    margin: 300px auto;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px ;
+    background: rgb(0, 5, 5);
+    
+    z-index:1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 10px;
+    padding-left: 20px;
+    top: 30px;
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0 10px;
+    
+}
+
+#navbar li a { 
+    list-style-type: lower-latin;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(36, 233, 124);
+    padding-left: 100px;
+    
+}
+#navbar li a:hover,
+#navbar li a.active
+{ 
+    color: #088178;
+}
+
+#navbar li a.active::after,
+ {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px ;
+    left: 2px;
+
+}
+#mobile{
+    display:none;
+    align-items: center;
+    color: #0f0;
+}
+#close{
+    display: none;
+}
+.iconne{
+    display: none;
+}
+.wrapper{
+    width: 100%
+    margin:0 auto;
+}
+.content p,b{
+    text-decoration: none;
+    display: inline-block;
+    color: #bde6bd;
+    font-size: 30px;
+    margin: -1px -10px 20px 50px;
+    font-family: "Roboto Mono",monospace;
+    max-width: 500px;
+    font-style: italic;
+    
+
+}
+.content{
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    padding-top: 140px;
+    margin-top: 0px;
+
+
+
+
+}
+.content b{
+    padding-top: -2px;
+    font-size: 3.0rem;
+    margin: -4rem 0.25rem 1rem;
+    text-shadow: 0 0 6px #0f0;
+    
+}
+
+.yas{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: -1px;
+    margin-bottom: 0px;
+    padding-bottom: 21px;
+    top: 10pxs;
+    /* object-fit: cover; */
+    /* transform: translateZ(-1px) scale(1.1); */
+    /* z-index: -1; */
+    /* background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+a#scroll-dow{
+    position: absolute;
+    height: 1.7em;
+    width: 1.1em;
+    border: 0.1em solid #ddf8b1;
+    margin: auto;
+    left: 0;
+    right: 120px;
+    bottom: 6.25em;
+    border-radius: 3em;
+    top:900px;
+}
+
+a#scroll-dow::before{
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    width:0.1em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    100% {
+        opacity: 7.5;
+
+    }
+    100% {
+        transform: translateY(0.8em);
+        opacity: 12;
+    }
+
+}
+
+
+.scroll p{
+    padding-top: 5px;
+    text-decoration: none;
+    display: inline-block;
+    color: #bde6bd;
+    font-size: 14px;
+    margin: -1px -10px 20px 22px;
+    font-family: "Roboto Mono",monospace;
+    text-align: justify;
+    font-style: italic;
+
+}
+
+
+
+
+
+a#scroll-btn::after{
+    position: absolute;
+    content: "Scroll Down ⇣  ";
+    width: 12em;
+    display: block;
+    width: 12em;
+    text-align: center;
+    left: -4.2em;
+    bottom: -2.5em;
+    font-size: 1.6em;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+video{
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    width: 100%;
+    z-index: -1;
+    color: #070a1c;
+    
+    background-position: center center;
+
+}
+
+.sec2{
+    height: 300px;
+    padding: 50px 0px;
+}
+.sec2 video{
+    height: 40px;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+}
+
+
+/* .sec2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* transform: translateZ(-1px) scale(1.1); */
+    /* z-index: -1; */
+    background-attachment: fixed;
+    background-position: center center;
+
+} */
+    
+.nav__socials {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    overflow: visible; 
+    z-index: 10;
+   color: #f5e768;
+}
+
+.icon{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: -190pX;
+    position: relative;
+    top: 8.7%;
+    left: -740PX;
+    transform: translateY(-50%);
+    
+    
+}
+.icon a{
+    bottom: 30px;
+    font-size: 24px;
+    top: 50px;
+    margin: 25px;
+
+    font-size: 48px;
+    color: #FF0000;
+    margin-left: 350px;
+
+    padding-top:-4px
+}
+  
+
+/* .nav a{
+    position:absolute;
+    width: 3rem;
+    height: 5rem;
+    overflow: sc;
+    display: flex;
+    text-align: inline;
+    top:2em;
+    color: #d3c442 */
+
+}
+
+.nav__socials a{
+    position:absolute;
+    width: 3rem;
+    height: 5rem;
+    overflow: sc;
+    display: flex;
+    text-align: center;
+    color: #f5e768
+
+}
+
+
+
+
+/* .nav p{
+    padding-top: 10px;
+    top: 23px;
+} */
+
+
+button{
+position:relative ;
+font-size: 13px;
+font-weight: 600;
+padding: 1rem 1.4rem;
+color: #fff;
+background-color: #d0eed0;
+border-radius: 1rem;
+border: 1px solid #fff;
+outline: none;
+transition: 0,2222s;
+
+justify-content: left;
+text-align : left;
+margin: -300 -2  20 610;
+font-style: italic;
+font-weight: 500;
+display: inline-block; 
+
+
+
+}
+ button:hover{
+    background: #07a89e;
+    color: #fff;
+}
+
+.terminal{
+    background: url();
+    width: 572px;
+    height: 372px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #01061b;
+    left: 320px;
+}
+.y{
+    top: 0cap;
+    padding-top: 0em;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px; 
+}
+
+
+
+
+
+
+
+.journay h1{
+    text-shadow: 0 0 6px #0f0;
+    font-size: 2.75rem;
+    padding-bottom: 200px;
+}
+.skills h1{
+    text-shadow: 0 0 6px #0f0;
+    font-size: 5.75rem;
+    padding-bottom: 200px;
+}
+
+
+
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -20;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    margin: 100px 0 0 170px;
+    border: 7px solid #ffffff50;
+    float: left;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: linear-gradient(45deg,#08aeea,#2af598 100%);
+    animation: morph 8s ease-in-out infinite;
+}
+.box img{
+    position: absolute;
+
+}
+@keyframes morph {
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius:30% 60% 70% 40% / 50% 60% 30% 60%;
+        background-image: linear-gradient(45deg, #fa88ff ,#2bd2ff 50%, #2bff88 90%);
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.box2{
+    background: #08aeea50 url(https://scontent.ftun15-1.fna.fbcdn.net/v/t39.30808-6/376569498_3544341069227273_5172521007727476611_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=viOREwICwtQAX-GhbFY&_nc_ht=scontent.ftun15-1.fna&oh=00_AfDkVoS3DpH26x7Wdv_NIqeq3e5PP-Xefz3J359ODqypjQ&oe=652A9462)  no-repeat ;
+    background-size: cover;
+    background-position: top -10px center;
+    background-blend-mode:multiply ;
+    animation: morphTwo 8s ease-in-out infinite 1s;
+}
+
+@keyframes morphTwo {
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius:30% 60% 70% 40% / 50% 60% 30% 60%;
+       
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+
+.y{
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+
+.nav__socials{
+    display: flex;
+    gap: 4rem;
+}
+
+
+.skills h1{
+    margin-top: 200px;
+    color: #bde6bd;
+    font-size: 2.4rem;
+    font-family: "Roboto Mono",monospace;
+    padding: 200px;
+}
+
+.skills p{
+    
+    color: #bde6bd;
+   
+    font-family: "Roboto Mono",monospace;
+    padding: 200px;
+}
+.skills span{
+    font-size: 20px;
+    font-family:initial;
+}
+.Blog h1{
+  margin-top: 200px;
+  color: #bde6bd;
+  font-size: 2.4rem;
+  font-family: "Roboto Mono",monospace;
+  padding: 200px;
+}
+.column{
+    position: absolute;
+
+}
+
+
+
+.container{
+    background-color: #0c0c0c;
+    position: absolute;
+    height: 60em;
+    width: 30em;
+    border: 0.1em solid #0c0c0c;
+    margin: auto;
+    left: 0;
+    right: 120px;
+    bottom: 6.25em;
+    border-radius: 3em;
+    top: 1980px;
+    left: -390px;
+}
+
+.container p,h1{
+    color: #bde6bd;
+    font-family: "Roboto Mono",monospace;
+    font-size: 25px;
+}
+
+.container ul  p{
+    
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.container ul li {
+color: #c7c7c7;
+text-align: left;
+padding-left: 70px;
+font-size: 12px;
+}
+
+.container2{
+    background-color: #0c0c0c;
+    position: absolute;
+    height: 60em;
+    width: 30em;
+    border: 0.1em solid #0c0c0c;
+    margin: auto;
+    left: 0;
+    right: 120px;
+    bottom: 6.25em;
+    border-radius: 3em;
+    top: 1980px;
+    right: -550px;
+}
+
+.container2 p,h1{
+    color: #bde6bd;
+    font-family: "Roboto Mono",monospace;
+    font-size: 25px;
+}
+
+.container2 ul  p{
+    
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.container2 ul li {
+color: #c7c7c7;
+text-align: left;
+padding-left: 70px;
+font-size: 12px;
+}
+
+
+
+
+.box4 img{
+    position: absolute;
+    border-radius: 70% 40% 20% 90% / 60% 30% 90% 40%;
+    width:250PX;
+    height: 200px;
+    right: 120px;
+    top: 700px;
+}
+
+
+.journay{
+    padding-top: 1100px;
+    text-align: center;
+}
+
+ .bac{
+    color: #0f0;
+ }
+
+
+
+
+
+ /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #bde6bd;;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 1000px;
+  }
+  
+  /* Container around content */
+  .conttainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .conttainer::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -11px;
+    background-color:#bde6bd; 
+    border: 4px solid #bde6bd;
+    top: -5px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+ 
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+    top: -150px;
+  }
+  .gauch::after {
+    left: 587px;
+    top: -160px;
+  }
+  .droit::after {
+    left: 587px;
+    top: -300px;
+  }
+  
+  /* The actual content */
+  .contnt {
+    padding: 200px 30px;
+    background-color:transparent;
+    position: relative;
+    border-radius: 6px;
+    padding-top: ;
+  }
+  .contnt h2{
+    
+    color: #0f0;
+    margin-top: -290px;
+    margin-left: 300px;
+  }
+
+  .contnt img{
+    
+    color: #0f0;
+    margin-top: -290px;
+    margin-left: 250px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+ 
+//timeline
+
+
+
+
+.tab {
+    width: 100%;
+    height: 1500px;
+    background: #2b0c0c;
+    
+   
+   
+    top: 100px;
+}
+
+.ligne {
+    height: 1000px;
+    width: 8px;
+    margin: 0 auto;
+    background: #333;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    border: 1px solid #000;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.r1{top: 185%;}
+.r2{top: 220%;}
+.r3{top: 240%;}
+.r4{top: 265%;}
+
+.boxx {
+    color: #f3a4a4;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background: transparent;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 1%;
+    transform: translate(-50%);
+    margin-left: 1000PX;
+}
+/* interet */
+.b1 {
+    top: 3380px;
+    /* left: calc(5% - 270px); */
+    left: 20%;
+
+}
+/* PROJET */
+.b2 {
+    top: 2999px;
+    left: calc(50% + 270px);
+    left: 2%;
+}
+
+/* COMPETENCE */
+.b3 {
+    top: 2400px;
+    left: calc(50% + 270px);
+    left: 2%;
+}
+.b4 {
+    top: 2770px;
+    left: calc(50% + 270px);
+    left: 20%;
+}
+
+.boxx p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    
+    
+    #header{
+        height: 100px;
+    }
+    #header b{
+        height: 150px;
+        font-size: 35px;
+        padding-top: 60px;
+    }
+    
+    #navbar li a { 
+        
+        font-size: 20px;
+        
+    }
+    #navbar li {
+        list-style-type: none;
+        margin: 7px 10px ;
+    
+
+        
+    }
+    .icon{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        display: flex;
+        
+        flex-direction: column;
+        margin-top: -190pX;
+        position: relative;
+        top: 17.0%;
+        left: -10PX;
+        transform: translateY(-50%);
+        
+        
+    }
+    .icon a{
+        bottom: 30px;
+        font-size: 10000px;
+        top: 50px;
+        margin: 25px;
+    
+        font-size: 48px;
+        color: #FF0000;
+        margin-left: -250px;
+    
+        padding-top:-4px
+    }
+    table {
+        /* margin-left: 20px; */
+        margin-top: 270px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 4px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 30.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 1000px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 200px;
+        padding-left: 100px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 45px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+       
+        
+    }
+    button {
+        position: absolute;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 1rem 1.4rem;
+        color: #fff;
+        background-color: #d0eed0;
+        border-radius: 1rem;
+        border: 1px solid #fff;
+        outline: none;
+        transition: 0.2222s;
+        justify-content: left;
+        text-align: left;
+        margin-top: -70px; /* Adjust margin-top for spacing */
+        font-style: italic;
+        font-weight: 500;
+        display: inline-block;
+        margin-left: 70px; /* Adjust this value to move the button further left */
+    }
+
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 650px;
+        right: 10px;
+        top: 1070px;
+    }
+
+    .scroll p{
+        padding-top: -60px;
+        text-decoration: none;
+        display: inline-block;
+        color: #bde6bd;
+        font-size: 20px;
+        margin: -1px -10px 20px 22px;
+        font-family: "Roboto Mono",monospace;
+        text-align: justify;
+        font-style: italic;
+    
+    }
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 300px;
+    }
+    
+    .skills h1 {    
+
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 800px;
+        
+    }
+    .Blog h1 {    
+
+      color: #bde6bd;
+      font-size: 2.3rem;
+      margin-left: 800px;
+      
+  }
+    
+    
+    .skills span {
+        font-size: 25px;
+        font-family: initial;
+        max-width: 100px; /* Adjust the max-width if needed */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+    
+    
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 150rem;
+        right: -100px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 150rem;
+        right: -1530px;
+    }
+    .container p,h1{
+        
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size20px;
+        
+    }
+} 
+.tab {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the tab */
+    transform: translateX(-50%); /* Center the tab horizontally */
+}
+
+.ligne {
+    position: absolute;
+    width: 4px;
+    height: 1300px;
+    left: 50%; /* Center the line */
+    transform: translateX(-2px); /* Slight adjustment to center the line */
+    top: 3700px;
+}
+
+.rond {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    left: 50%; /* Center the circle */
+    transform: translateX(-30px); /* Slight adjustment to center the circle */
+    top: 150px;
+}
+
+/* Rest of your CSS remains unchanged */
+
+/* Timeline points */
+.r1 { top: 3700px; }
+.r2 { top: 4160px; }
+.r3 { top: 4460px; }
+.r4 { top: 4960px; }
+
+/* Timeline boxes */
+.boxx{
+    margin-top: 1190px;
+    left: -700px;
+}
+/* 1COMPETENCE */
+.b3 {
+    margin-top: 1200px;
+    
+}
+ /* 2EXPRIENCE */
+ .b4 {
+    margin-top: 1300px;
+    
+}
+
+/* 3PROJET */
+.b2 {
+    margin-top: 1400px;
+    
+}
+/* 4INTERET */
+.b1 {
+    margin-top: 1500px;
+    
+
+}
+
+
+   
+
+   
+    
+   
+@media only screen and (max-width: 925px) {
+    button {
+        margin-top: -350px;
+        margin-left: 50px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        margin-left: 130px;
+        right: 10px;
+        top: 1070px;
+    }
+    .icon{
+        top: 810PX;
+    }
+  
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .skills h1 {
+        margin-top: 130px;
+        color: #bde6bd;
+        font-size: 4.3rem;
+        margin-left: 830px;
+        
+    }
+    .Blog h1 {
+      margin-top: 30px;
+      color: #bde6bd;
+      font-size: 4.3rem;
+      margin-left: 500px;
+      
+  }
+    .skills span {
+        font-size: 22px;
+        font-family: initial;
+        max-width: 100%; /* Adjust the max-width if needed */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 150rem;
+        right: -140px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 150rem;
+        right: -1560px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    .container2 p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+        
+    }
+    .container{
+        top: 2900px;
+    }
+    .container2{
+        top:2900px;
+    }
+    .tab{
+        top: 800px;
+    }
+
+}
+@media only screen and (max-width: 900px) {
+    button {
+        margin-top: -50px;
+        margin-left: 20px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 640px;
+        right: 10px;
+        top: 1070px;
+    }
+
+  
+   
+    
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .skills h1 {
+        margin-top: 130px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 830px;
+        
+    }
+    .Blog h1 {
+      margin-top: 130px;
+      color: #bde6bd;
+      font-size: 2.3rem;
+      margin-left: 830px;
+      
+  }
+    .skills span {
+        font-size: 20px;
+        font-family: initial;
+        max-width: 100%; /* Adjust the max-width if needed */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+    
+
+}
+@media only screen and (max-width: 899px) {
+    button {
+        margin-top: -50px;
+        margin-left: 40px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 650px;
+        right: 10px;
+        top: 1100px;
+    }
+
+  
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .skills h1 {
+        margin-top: 130px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 840px;
+        
+    }
+    
+    .skills span {
+        font-size: 20px;
+        font-family: initial;
+        max-width: 100%; /* Adjust the max-width if needed */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+ 
+}
+
+@media only screen and (max-width: 860px) {
+    button {
+        margin-top: -50px;
+        margin-left: 20px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        margin-left: 120px;
+        right: 10px;
+        top: 1070px;
+    }
+
+  
+   
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .skills h1 {
+        margin-top: 130px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 850px;
+        
+    }
+    
+    .skills span {
+        font-size: 20px;
+        font-family: initial;
+        max-width: 100%; /* Adjust the max-width if needed */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+    
+   
+}
+@media only screen and (max-width: 820px) {
+    button {
+        margin-top: -300px;
+        margin-left: -1px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        margin-left: 100px;
+        right: 10px;
+        top: 1070px;
+    }
+    .icon{
+        top:810px;
+        left: -300px;
+    }
+    .icon a{
+        bottom: 30px;
+        font-size: 24px;
+        top: 50px;
+        margin: 25px;
+    
+        font-size: 48px;
+        color: #FF0000;
+        margin-left: 350px;
+    
+        padding-top:1px
+    }
+  
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .skills h1 {
+        margin-top: 1px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 860px;
+        
+    }
+    .Blog h1{
+      margin-left: 500px;
+      margin-top: 100px;
+      font-size: 50px;
+  }
+    .skills span {
+        font-size: 20px;
+        font-family: initial;
+        max-width: 100%; /* Adjust the max-width if needed */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+    .container{
+        top: 2700px;
+    }
+    .container2{
+        top:2700px;
+    }
+
+
+}   
+@media only screen and (max-width: 780px) {
+    #header b{
+        height: 150px;
+        font-size: 60px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    .icon a{
+        display: none;
+    }
+    table {
+        /* margin-left: 20px; */
+        margin-top: 570px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+    }
+    
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 50px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    
+  
+  
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .skills h1 {
+        margin-top: 100px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 900px;
+        
+    }
+    button {
+        margin-top: -320px;
+        margin-left: -20px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 650px;
+        right: 10px;
+        top: 1100px;
+    }
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 150rem;
+        right: -190px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 150rem;
+        right: -1595px;
+    }
+    .container p,h1{
+        
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size20px;
+        
+    }
+    .container{
+        top: 2700px;
+    }
+    .container2{
+        top:2700px;
+    }
+}
+@media only screen and (max-width: 740px) {
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -3px; /* Adjust this value to move the button further left */
+    }
+  
+
+
+    
+    button {
+        margin-top: -50px;
+        margin-left: -40px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 640px;
+        right: 10px;
+        top: 1100px;
+    }
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1 {
+        margin-top: 100px;
+        color: #bde6bd;
+        font-size: 2.3rem;
+        margin-left: 930px;
+        
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 150rem;
+        right: -230px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 150rem;
+        right: -1600px;
+    }
+    .container p,h1{
+        
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size20px;
+        
+    }
+}
+@media only screen and (max-width: 702px) {
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -60px; /* Adjust this value to move the button further left */
+    }
+    
+}
+@media only screen and (max-width: 670px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 33.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 500px;
+        padding-left: 200px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 50px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        padding-top: 10px;
+        padding-right: 1px;
+        margin-top: -50px;
+        margin-left: -80px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  20px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: -190px;
+        left: 630px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 975px;
+
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 170rem;
+        right: -280px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 170rem;
+        right: -1660px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+    }
+        
+    
+    .container ul  p{
+        
+        font-size:20.8px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:20.8px;
+    }
+    
+}
+@media only screen and (max-width: 595px) {
+    button {
+        padding-top: 10px;
+        padding-right: 1px;
+        margin-top: -50px;
+        margin-left: -120px; /* Adjust this value to move the button further left */
+    }
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: -190px;
+        left: 590px;
+        right: 10px;
+        top: 1700px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 175rem;
+        right: -300px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 175rem;
+        right: -1710px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    .container p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 582px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 6px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 35.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 500px;
+        padding-left: 100px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 50px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -130px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  20px;
+    }
+
+
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 4px;
+        
+        margin-top: 90px;
+        left: 570px;
+        right: 2px;
+        top: 1400px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1000px;
+        margin-top: 280px;
+        font-size: 40px;
+    }
+    .skills span{
+        font-size: 26px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 175rem;
+        right: -300px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 175rem;
+        right: -1710px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    .container p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 6px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 35.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 500px;
+        padding-left: 100px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 50px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -360px;
+        margin-left: -140px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  20px;
+    }
+
+
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 4px;
+        
+        margin-top: 90px;
+        left: 570px;
+        right: 2px;
+        top: 1400px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1000px;
+        margin-top: 280px;
+        font-size: 40px;
+    }
+    .Blog h1{
+      margin-left: 450px;
+      margin-top: 100px;
+      font-size: 50px;
+  }
+    .skills span{
+        font-size: 26px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 175rem;
+        right: -300px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 175rem;
+        right: -1710px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    .container p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+    .tab{
+        top: 400px;
+    }
+}
+@media only screen and (max-width: 522px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 1px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 36.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 500px;
+        padding-left: 200px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 50px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -170px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 580px;
+        right: 10px;
+        top: 1300px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1020px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 175rem;
+        right: -310px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 175rem;
+        right: -1720px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 100px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 900px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -210px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 550px;
+        right: 10px;
+        top: 1700px;
+    }
+    .scroll p{
+        font-size: 27px;
+    }
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-top: 1000px;
+        margin-left: 1100px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -430px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 200rem;
+        right: -1850px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}   
+@media only screen and (max-width: 480px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 100px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 900px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -210px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 550px;
+        right: 10px;
+        top: 1700px;
+    }
+    .scroll p{
+        font-size: 27px;
+    }
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-top: 1000px;
+        margin-left: 1100px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -430px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 200rem;
+        right: -1850px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 100px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 900px;
+        margin-left: 660px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 550px;
+        right: 10px;
+        top: 1700px;
+    }
+    .scroll p{
+        font-size: 27px;
+    }
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-top: 1000px;
+        margin-left: 1100px;
+    }
+    .Blog h1{
+      margin-left: 460px;
+      margin-top: 500px;
+      font-size: 50px;
+  }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 215rem;
+        right: -430px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 215rem;
+        right: -1850px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+    .tab{
+        top: 1000px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 850px;
+    }
+    .box{
+        margin-left: 90px;
+        padding-top: 600px;
+        padding-left: 60px;
+        max-width: 400px;
+        margin-right: 270px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    button {
+        margin-top: -90px;
+        margin-left: -10px; /* Adjust this value to move the button further left */
+    }
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 500px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1100px;
+        margin-top: 900px;
+        font-size: 50px;
+    }
+    .Blog h1{
+      margin-left: 400px;
+      margin-top: 500px;
+      font-size: 50px;
+  }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 40em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 210rem;
+        right: -470px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 40em;
+        top: 210rem;
+        right: -1837px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+    .tab {
+        top: 1000px;
+    }
+
+}
+@media only screen and (max-width: 368px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 850px;
+    }
+    .box{
+        margin-left: 90px;
+        padding-top: 600px;
+        padding-left: 60px;
+        max-width: 400px;
+        margin-right: 270px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    button {
+        margin-top: -50px;
+        margin-left: -10px; /* Adjust this value to move the button further left */
+    }
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 500px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1100px;
+        margin-top: 900px;
+        font-size: 50px;
+    }
+    .Blog h1{
+      margin-left: 400px;
+      margin-top: 500px;
+      font-size: 50px;
+  }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 35em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -470px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 35em;
+        top: 200rem;
+        right: -1700px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:40px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:40px;
+    }
+    .tab {
+        top: 900px;
+    }
+
+}
+@media only screen and (max-width: 340px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 850px;
+    }
+    .box{
+        margin-left: 90px;
+        padding-top: 600px;
+        padding-left: 60px;
+        max-width: 400px;
+        margin-right: 270px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 500px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1100px;
+        margin-top: 900px;
+        font-size: 50px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 35em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -390px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 35em;
+        top: 200rem;
+        right: -1660px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:40px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:40px;
+    }
+    .tab {
+        position: absolute;
+        margin-top: 800px;
+        left: 50%; /* Center the tab */
+        transform: translateX(-50%); /* Center the tab horizontally */
+    }
+
+}
+@media only screen and (max-width: 340px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+        padding: 0 1px;
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 850px;
+    }
+    .box{
+        margin-left: 90px;
+        padding-top: 600px;
+        padding-left: 60px;
+        max-width: 400px;
+        margin-right: 270px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 800px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 500px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1100px;
+        margin-top: 900px;
+        font-size: 50px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 35em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -390px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 35em;
+        top: 200rem;
+        right: -1660px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:40px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:40px;
+    }
+    .tab {
+        position: absolute;
+        margin-top: 800px;
+        left: 50%; /* Center the tab */
+        transform: translateX(-50%); /* Center the tab horizontally */
+    }
+
+}
+@media only screen and (max-width: 332px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        max-width:00px;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+    
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+        padding-left: 200px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+        margin-right: 300px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 1000px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 450px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1000px;
+        margin-top: 600px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 35em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -400px;
+
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 35em;
+        top: 200rem;
+        right: -1600px;
+    }
+    .container p,h1{
+        
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 30px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+    /* Timeline */
+.tab {
+    position: absolute;
+    margin-top: 800px;
+    left: 50%; /* Center the tab */
+    transform: translateX(-50%); /* Center the tab horizontally */
+}
+
+
+}
+@media only screen and (max-width: 324px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        max-width:00px;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+    
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 600px;
+        padding-left: 200px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+        margin-right: 300px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 1000px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 600px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-left: 1100px;
+        margin-top: 600px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 35em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -390px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 35em;
+        top: 200rem;
+        right: -1590px;
+    }
+    .container p,h1{
+        
+        font-size: 50px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:40px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 50px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:40px;
+    }
+}
+@media only screen and (max-width: 322px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        max-width:00px;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+    
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 600px;
+        padding-left: 200px;
+    }
+    .box{
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+        margin-right: 300px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 1000px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 1px;
+        
+        margin-top: 100px;
+        left: 470px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-right: 100px;
+        margin-top: 600px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 30em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -400px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 30em;
+        top: 200rem;
+        right: -1500px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 304px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        max-width:00px;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+    
+        font-size: 40.9px;
+        margin-right: 80px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 660px;
+        padding-left: 120px;
+    }
+    .box{
+        margin-left: 10px;
+        padding-top: 600px;
+        padding-left: 200px;
+        max-width: 400px;
+        margin-right: 300px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 1000px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+    a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 1px;
+        
+        margin-top: 100px;
+        left: 400px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-right: 200px;
+        margin-top: 600px;
+    }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 32em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -350px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 32em;
+        top: 200rem;
+        right: -1500px;
+    }
+    .container p,h1{
+        
+        font-size: 40px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:30px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 40px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:30px;
+    }
+}
+
+
+@media only screen and (max-width: 280px) {
+    table {
+        /* margin-left: 20px; */
+        margin-top: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 40px;
+        
+    }
+    
+    .content span {
+        display: RELATIVE;
+        left: 122rem;
+        max-width:00px;
+        padding-right: 370px;
+        font-size: 10px;
+        padding-left: -30rem;
+        margin-right: ;
+        margin-bottom: 20px; /* Add spacing between lines */
+    }
+  
+  
+    .content p {
+        
+    
+        font-size: 32.9px;
+        margin-right:   10px;
+        margin-bottom: 80px; /* Add spacing between lines */
+        max-width: 800px;
+        margin-left: 600px;
+        padding-left: 170px;
+    }
+    .box{
+        margin-left: 10px;
+        padding-top: 500px;
+        padding-left: 10px;
+        max-width: 400px;
+        margin-right: 390px;
+    }
+    .content b {
+        display: inline-block; /* Make the <span> inline-block */
+        font-size: 60px;
+        text-align:left ;
+        margin-bottom: 10px; /* Add spacing between lines */
+        margin-right: 50px;
+        padding-left: -300px;
+        padding-right: -800px;
+        max-width: 1000px;
+        line-height: 50px;
+
+
+    }
+    
+  
+      /* Center the content of the first column */
+    td:first-child {
+        margin: 0;
+        padding-left: 400px;
+    }
+  
+      /* Adjust the margin for the second column */
+      td:nth-child(2) {
+        padding-right: 100px;/
+        maw-width: 200000px;
+        
+    }
+    #header b{
+        height: 150px;
+        font-size: '0px;
+        padding-top: 40px;
+    }
+    
+    #navbar {
+        display:block;
+    
+    } 
+    #navbar {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color:hsla(0, 0%, 0%, .80);
+        box-shadow:#0f0 ;
+        top: 0;
+        right: -3000px;
+        height: 490vh;
+        width: 1100px;
+        bottom: 0px;
+        padding: 400px 0 0 10px;
+        transition: 0.3s;
+        font-weight: 100px;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        list-style-type: none;
+        margin-bottom: 200px;
+
+        
+    }
+
+    #mobile{
+        display:flex;
+        align-items: center;
+        color: #0f0;
+    }
+    #mobile i{
+        font-size: 50px;
+        padding-right: 90px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        color: #d8a4a4;
+        font-size:80px ;
+    }
+    #navbar li a { 
+        list-style-type: lower-latin;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+        color:rgb(36, 233, 124);
+        padding-left: 100px;
+    
+    }
+    .iconne{
+        display: initial;
+        position: absolute;
+        top:2900px;
+        margin-right: 100px;
+    }
+    button {
+        margin-top: -400px;
+        margin-left: -250px; /* Adjust this value to move the button further left */
+    }
+    .normal{
+        font-size:  30px;
+    }
+
+
+     a#scroll-dow{
+        position: absolute;
+        /* margin: auto; */
+        padding-left: 10px;
+        
+        margin-top: 100px;
+        left: 350px;
+        right: 10px;
+        top: 1700px;
+    }
+   
+
+
+    .skills {
+        display: flex; /* Use flexbox for centering horizontally */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        height: 100vh; /* Optional: Center within the viewport height */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .skills h1{
+        margin-right: 300px;
+        margin-top: 1000px;
+    }
+    .Blog h1{
+      margin-left: 250px;
+      margin-top: 500px;
+      font-size: 50px;
+  }
+    .container{
+        
+        right: 200px;
+        height: 90em;
+        width: 30em;
+        border: 0.1em solid #0c0c0c;
+        margin: auto;
+        left: 0;
+        right: 120px;
+        bottom: 6.25em;
+        top: 200rem;
+        right: -300px;
+    }
+    .container2{
+        
+        right: 900px;
+        height: 90em;
+        width: 30em;
+        top: 200rem;
+        right: -1370px;
+    }
+    .container p,h1{
+        
+        font-size: 37px;
+        font-weight: 700px;
+    }
+    
+    .container ul  p{
+        
+        font-size:25px;
+        
+    }
+    
+    .container ul li {
+    color: #c7c7c7;
+    text-align: left;
+    padding-left: 70px;
+    font-size: 12px;
+    }
+    
+    
+    
+    .container2 p,h1{
+        font-size: 37px;
+    }
+    
+    .container2 ul  p{
+        
+        font-size:25px;
+    }
+    .tab{
+        top: 90px;
+    }
+}
+
